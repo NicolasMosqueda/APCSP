@@ -9,7 +9,7 @@ title: Nicolas's First Post
 
 ## About me
 
-Hello, my name is Nicolas Mosqueda. I am a senior and I like baseball and football. In school, my favorite subjects are math and physics. I am interesting in computer science. 
+Hello, my name is Nicolas Mosqueda. I am a senior and I like baseball and football. In school, my favorite subjects are math and physics. I am interested in computer science. 
 
 **I know how to write in bold text**, and also *in italics*. 
 Here's a list of my favorite baseball players:
