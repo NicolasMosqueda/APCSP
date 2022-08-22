@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Nicolas's First Post",
+            "title": "Nicolas's First Jupyter Notebook",
             "content": "print(&quot;Hello&quot;) . Hello .",
             "url": "https://nicolasmosqueda.github.io/APCSP/2022/08/21/first-jupyter-notebook.html",
             "relUrl": "/2022/08/21/first-jupyter-notebook.html",
