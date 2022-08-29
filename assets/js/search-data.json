@@ -13,6 +13,28 @@
   
     
         ,"post1": {
+            "title": "Bash Checks",
+            "content": "echo &quot;Using conditional statement to create a project directory and project&quot; # Variable section export project_dir=$HOME/vscode # change vscode to different name to test git clone export project=$project_dir/APCSP # change APCSP to name of project from git clone export project_repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; # change to project of choice cd ~ # start in home directory # Conditional block to make a project directory if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; # Conditional block to git clone a project from project_repo if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; . Failed to start the Kernel. AttributeError: module &#39;pexpect&#39; has no attribute &#39;spawn&#39;. View Jupyter &lt;a href=&#39;command:jupyter.viewOutput&#39;&gt;log&lt;/a&gt; for further details. .",
+            "url": "https://nicolasmosqueda.github.io/APCSP/2022/08/28/bash.html",
+            "relUrl": "/2022/08/28/bash.html",
+            "date": " • Aug 28, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
+            "title": "AP Gov Notes",
+            "content": "AP Gov Notes . .",
+            "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/28/ap-gov-notes.html",
+            "relUrl": "/markdown/2022/08/28/ap-gov-notes.html",
+            "date": " • Aug 28, 2022"
+        }
+        
+    
+  
+    
+        ,"post3": {
             "title": "Quiz Explanation",
             "content": "Quiz Explanation . Running Quiz on Jupter Notebook . I made a quiz on Unit 1 topics of AP US Government &amp; Politics. It also tests general knowledge of American politics in general. You can see in the screenshot above that I got some questions wrong on purpose to test the code. I also got questions correct to show that the code works as intended. .",
             "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/28/Quiz.html",
@@ -23,7 +45,7 @@
     
   
     
-        ,"post2": {
+        ,"post4": {
             "title": "Nicolas's First Jupyter Notebook",
             "content": "print(&quot;Hello&quot;) . Hello . print(&quot;I am very excited to learn about computer science this year&quot;) . I am very excited to learn about computer science this year .",
             "url": "https://nicolasmosqueda.github.io/APCSP/2022/08/21/first-jupyter-notebook.html",
@@ -34,7 +56,18 @@
     
   
     
-        ,"post3": {
+        ,"post5": {
+            "title": "Vocab List",
+            "content": "Vocab List . Vocab Explanation . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | .",
+            "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/21/Vocab.html",
+            "relUrl": "/markdown/2022/08/21/Vocab.html",
+            "date": " • Aug 21, 2022"
+        }
+        
+    
+  
+    
+        ,"post6": {
             "title": "Nicolas's First Post",
             "content": "Nicolas’s First Post . About me . Hello, my name is Nicolas Mosqueda. I am a senior and I like baseball and football. In school, my favorite subjects are math and physics. I am interested in computer science. . I know how to write in bold text, and also in italics. Here’s a list of my favorite baseball players: . Derek Jeter | Aaron Judge | Jorge Alfaro | Mariano Rivera | Mike Trout | Link to my Week 0 Ticket . Here’s my favorite baseball player, Derek Jeter: .",
             "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/21/Nico-First-Post.html",
