@@ -58,7 +58,7 @@
     
         ,"post5": {
             "title": "Vocab List",
-            "content": "Vocab List . Vocab Explanation . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | . Header | Title | . Paragraph | Text | .",
+            "content": "Vocab List . Vocab Explanation . Sequence | multiple steps or lines of code, must be more than one! | . Repositry | A repositroy is a place or source where code is stored | . Clone | Cloning code means transferring code from one place to another | . Python | Python is one of the biggest computer programming languages | . Jupyter Notebook | Meant for Python users in order to complete web server completed tasks | .",
             "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/21/Vocab.html",
             "relUrl": "/markdown/2022/08/21/Vocab.html",
             "date": " • Aug 21, 2022"
