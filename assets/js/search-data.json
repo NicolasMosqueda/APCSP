@@ -13,6 +13,17 @@
   
     
         ,"post1": {
+            "title": "HTML Fragments Changing Theme",
+            "content": "HTML Fragments Changing Theme . I changed the “remote theme” in config.yml to “moonwalk”, a Jekyll theme. My menu links on top are no longer visible (look at screenshot). For example, the search button and tags button are no longer there. This causes a big problem for users of my website. After seeing this, I went ahead and reverted the theme back to normal. . .",
+            "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/09/05/HTML-Fragments.html",
+            "relUrl": "/markdown/2022/09/05/HTML-Fragments.html",
+            "date": " • Sep 5, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "Ap Gov Notes",
             "content": "Forms of Government . Terms: . Autocracy - A form of government where one person is in charge . Monarchy is a type of autocracy where there is a king or queen and the power stays within the family . | Dictatorship is another form of autocracy where a single person is in control of everything . | . Democracy - A form of government where the power is spread amongst the people . Representative democracy is where the citizens elect people to represent them . | Direct democracy is where every citizen works in making decisions for the government . | . Oligarchy - A form of government where a group of people holds the power . A junta is an example of this as it is a small group of people in power . | . Theocracy - A form of government controlled by religious beliefs . Public Policy . Goals and programs our government creates and implements for society(to create order and take care of people) . | Complicated process- involves various stages and “inputs” . | Inputs: voters, media, special interest groups, politicians . | . Role of Government . What should the government do(National, state, and local) . | Answers vary. Ideas differ . | We do agree on some basic things- limited government, rule of law, democracy . | . Intro to Election Cycle . Voters/Decision Makers- NOT candidates . Party Elite- former or current elected officials, who choose the parties nominees . | Party Leaders-focused on picking the winner, are generally more moderate . | Party activists- ideological . | The Base-reliable voters for a candidate or party . | Electorate- voters . | . Most Americans are moderate voters, that being said the more moderate candidate have a higher chance of being elected . In 1972 McGovern lost by a landslide on the electoral vote because he was very left-leaning, Nixon ended up getting 520 out of 538 votes . | . Incumbent Advantage- candidates who already held office have a great advantage over their opponent . The average voter will likely choose the name they recognize on the ballot . | Candidates who already held office already have staff in place . | They already had a prior run where they gained support from voters . | Previous candidates also have the most money to advertise themsleves from donations and previous campaign, also called a war chest . | .",
             "url": "https://nicolasmosqueda.github.io/APCSP/2022/09/04/AP-Gov-Notes.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Computer Science EC Event Reflection",
             "content": "Computer Science EC Event Reflection . During the event today, I was able to gain lots of insight on college and careers in general from the six wonderful speakers. I was able to learn many new things that will definitely help me in my future. I am very grateful that the students were able to take time out of their schedule to share their personal experiences in order to help us. . There were many key takeaways from the students talk. A commonality I found with all of the students was that taking Computer Science was a very interesting experience and it was great in building a strong programming foundation. As they also mentioned that even if you do not decide to major in computer science, the skills learned in the class will still be very helpful for the majority of other majors. For example, one of the students mentioned that on a project for college, his background in computer science helped him save lots of time as he could create a script rather than doing a bunch of manual work. I found all of this very interesting as it made me glad that I took this class as I know that will likely benefit me at some point in my future. This also motivated me to make the most out of this class and try to learn everything that I possibly can. . Another thing that was very helpful was the reassurance that I was given by the students. They mentioned how the computer science space is very competitive and it can be discouraging. They advised to focus on your own path and not worry about what others are doing. I found this very relatable as in the first couple weeks of this computer science class it has become clear that many students are way more experienced than others. Being someone who is very inexperienced, I found this very comforting. I know that if I put in my best effort, everything will work out in the end. . In terms of career and college advice, they said many things I will apply to my future. For example, they talked about making connections and building up your background through different jobs and internships. They largely expressed the importance of building connections and reaching out to people who are in the same field as you. As well as making a Linkedin or Resume to record different jobs or projects that you have worked on. I will make sure that I start doing all of these things to prepare me for my future. I want to be fully prepared for the real world once I leave high school and head on to college and beyond. .",
             "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/29/CS-EC.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Quiz",
             "content": "import getpass, sys def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 6 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) rsp = question_with_response(&quot;What form of government is the United States?&quot;) if rsp == &quot;Representative Democracy&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Who is the Speaker of the House?&quot;) if rsp == &quot;Nancy Pelosi&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;How many branches of government does the United States have?&quot;) if rsp == &quot;3&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Who controls the Senate right now?&quot;) if rsp == &quot;Nobody&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What is the name of the branch of Congress where each member serves 2 years?&quot;) if rsp == &quot;House of Representatives&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What is the name of the government branch that the President works in?&quot;) if rsp == &quot;Executive&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) . Hello, nicom running c: Users nicom AppData Local Programs Python Python310 python.exe You will be asked 6 questions. Question: Are you ready to take a test? Answer: Question: What form of government is the United States? Representative Democracy is correct! Question: Who is the Speaker of the House? is incorrect! Question: How many branches of government does the United States have? 3 is correct! Question: Who controls the Senate right now? is incorrect! Question: What is the name of the branch of Congress where each member serves 2 years? House of Representatives is correct! Question: What is the name of the government branch that the President works in? is incorrect! nicom you scored 3/6 .",
             "url": "https://nicolasmosqueda.github.io/APCSP/jupyter/2022/08/28/quiz.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "Bash Checks",
             "content": "Bash Check on Jupyter . Bash Check . toc:true- branch: master | badges: true | comments: true | author: Nicolas Mosqueda | categories: [jupyter] | image: images/chart-preview.png | . echo &quot;Using conditional statement to create a project directory and project&quot; # Variable section export project_dir=$HOME/vscode # change vscode to different name to test git clone export project=$project_dir/APCSP # change APCSP to name of project from git clone export project_repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; # change to project of choice cd ~ # start in home directory # Conditional block to make a project directory if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; # Conditional block to git clone a project from project_repo if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; . echo &quot;Navigate to project, then navigate to area wwhere files were cloned&quot; cd $project pwd echo &quot;&quot; echo &quot;list top level or root of files with project pulled from github&quot; ls echo &quot;&quot; echo &quot;list again with hidden files pulled from github&quot; ls -a # hidden files flag, many shell commands have flags echo &quot;&quot; echo &quot;list all files in long format&quot; ls -al # all files and long listing . echo &quot;Look for posts&quot; export posts=$project/_posts # _posts inside project cd $posts # this should exist per fastpages pwd # present working directory ls -l # list posts . echo &quot;Look for posts&quot; export posts=$project/_posts # _posts inside project cd $posts # this should exist per fastpages pwd # present working directory ls -l # list posts . echo &quot;Look for notebooks&quot; export notebooks=$project/_notebooks # _notebooks is inside project cd $notebooks # this should exist per fastpages pwd # present working directory ls -l # list notebooks . echo &quot;Look for images in notebooks, print working directory, list files&quot; cd $notebooks/images # this should exist per fastpages pwd ls -l . echo &quot;Navigate to project, then navigate to area wwhere files were cloned&quot; cd $project echo &quot;show the contents of README.md&quot; echo &quot;&quot; cat README.md # show contents of file, in this case markdown echo &quot;&quot; echo &quot;end of README.md&quot; . echo &quot;Show the shell environment variables, key on left of equal value on right&quot; echo &quot;&quot; env . cd $project echo &quot;&quot; echo &quot;show the secrets of .git&quot; cd .git ls -l echo &quot;&quot; echo &quot;look at config file&quot; cat config .",
             "url": "https://nicolasmosqueda.github.io/APCSP/2022/08/28/bash.html",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "AP Gov Notes",
             "content": "AP Gov Notes . In my AP Gov class we went over the current events project that will be going on throughout the tirmester. We started by looking at examples from two fo the AP Gov teachers, Mrs. Dupas and Mr. Coats. I took notes on what their presentations. I also made a response to Mr. Coats presentation providing praise and further insight. . . . In additon to learning about our current eventsassignment, we also talked a lot about the media. More specifically, how to spot fake news and understanding media biases and roles. In this assignemnt I went over steps I took to figuring out if the particular article was fake news or was reliable. . .",
             "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/28/ap-gov-notes.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "Quiz Explanation",
             "content": "Quiz Explanation . Running Quiz on Jupter Notebook . I made a quiz on Unit 1 topics of AP US Government &amp; Politics. It also tests general knowledge of American politics in general. You can see in the screenshot above that I got some questions wrong on purpose to test the code. I also got questions correct to show that the code works as intended. .",
             "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/28/Quiz.html",
@@ -78,7 +89,7 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "Nicolas's First Jupyter Notebook",
             "content": "print(&quot;Hello&quot;) . Hello . print(&quot;I am very excited to learn about computer science this year&quot;) . I am very excited to learn about computer science this year .",
             "url": "https://nicolasmosqueda.github.io/APCSP/2022/08/21/first-jupyter-notebook.html",
@@ -89,7 +100,7 @@
     
   
     
-        ,"post8": {
+        ,"post9": {
             "title": "Vocab List",
             "content": "Vocab List . Vocab Explanation . Sequence | multiple steps or lines of code, must be more than one! | . Repositry | A repositroy is a place or source where code is stored | . Clone | Cloning code means transferring code from one place to another | . Python | Python is one of the biggest computer programming languages | . Jupyter Notebook | Meant for Python users in order to complete web server completed tasks | .",
             "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/21/Vocab.html",
@@ -100,7 +111,7 @@
     
   
     
-        ,"post9": {
+        ,"post10": {
             "title": "Nicolas's First Post",
             "content": "Nicolas’s First Post . About me . Hello, my name is Nicolas Mosqueda. I am a senior and I like baseball and football. In school, my favorite subjects are math and physics. I am interested in computer science. . I know how to write in bold text, and also in italics. Here’s a list of my favorite baseball players: . Derek Jeter | Aaron Judge | Jorge Alfaro | Mariano Rivera | Mike Trout | Link to my Week 0 Ticket . Here’s my favorite baseball player, Derek Jeter: .",
             "url": "https://nicolasmosqueda.github.io/APCSP/markdown/2022/08/21/Nico-First-Post.html",
