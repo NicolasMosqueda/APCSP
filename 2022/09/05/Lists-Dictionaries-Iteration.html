@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -423,10 +423,135 @@ FavoriteFootballPlayers:  [&#39;Tom Brady&#39;, &#39;Patrick Mahomes&#39;, &#39;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Thank</span> <span class="n">you</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">new_game</span><span class="p">():</span>
+  
+   <span class="n">guesses</span> <span class="o">=</span> <span class="p">[]</span>
+   <span class="n">correct_guesses</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="n">question_num</span> <span class="o">=</span> <span class="mi">1</span>
+  
+   <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------&quot;</span><span class="p">)</span>
+       <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">options</span><span class="p">[</span><span class="n">question_num</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+           <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+       <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter (A, B, C, or D): &quot;</span><span class="p">)</span>
+       <span class="n">guess</span> <span class="o">=</span> <span class="n">guess</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+       <span class="n">guesses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span>
+      
+       <span class="n">correct_guesses</span> <span class="o">+=</span> <span class="n">check_answer</span><span class="p">(</span><span class="n">questions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">),</span><span class="n">guess</span><span class="p">)</span>
+       <span class="n">question_num</span> <span class="o">+=</span> <span class="mi">1</span>
+      
+   <span class="n">display_score</span><span class="p">(</span><span class="n">correct_guesses</span><span class="p">,</span> <span class="n">guesses</span><span class="p">)</span>
+  
+<span class="c1"># -------------------------</span>
+<span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">answer</span><span class="p">,</span> <span class="n">guess</span><span class="p">):</span>
+  
+   <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">guess</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CORRECT!&quot;</span><span class="p">)</span>
+       <span class="k">return</span> <span class="mi">1</span>
+   <span class="k">else</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;WRONG!&quot;</span><span class="p">)</span>
+       <span class="k">return</span> <span class="mi">0</span>
+<span class="c1"># -------------------------</span>
+<span class="k">def</span> <span class="nf">display_score</span><span class="p">(</span><span class="n">correct_guesses</span><span class="p">,</span> <span class="n">guesses</span><span class="p">):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;RESULTS&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------&quot;</span><span class="p">)</span>
+  
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answers: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="n">questions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">()</span>
+      
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Guesses:  &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">guesses</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">()</span>
+  
+   <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">correct_guesses</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your score is: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;%&quot;</span><span class="p">)</span>
+<span class="c1"># -------------------------</span>
+<span class="k">def</span> <span class="nf">play_again</span><span class="p">():</span>
+  
+   <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you want to play again?: (yes or no): &quot;</span><span class="p">)</span>
+   <span class="n">response</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+  
+   <span class="k">if</span> <span class="n">response</span> <span class="o">==</span> <span class="s2">&quot;YES&quot;</span><span class="p">:</span>
+       <span class="k">return</span> <span class="kc">True</span>
+   <span class="k">else</span><span class="p">:</span>
+       <span class="k">return</span> <span class="kc">False</span>
+<span class="c1"># -------------------------</span>
+ 
+ 
+<span class="n">questions</span> <span class="o">=</span> <span class="p">{</span>
+<span class="s2">&quot;What is the formula (value-mean)/stand deviation used for?: &quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="s2">&quot;What is the median of the following sequence of numbers 1,2,5,8,9?: &quot;</span><span class="p">:</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span>
+<span class="s2">&quot;What is the standard deviation of the following sequence 5,5,15,15 ?: &quot;</span><span class="p">:</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span>
+<span class="s2">&quot;What is the mean of the following sequence 2,4,6,10,20?: &quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+ 
+<span class="n">options</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;A. Z-score&quot;</span><span class="p">,</span> <span class="s2">&quot;B. mean&quot;</span><span class="p">,</span> <span class="s2">&quot;C. median&quot;</span><span class="p">,</span> <span class="s2">&quot;D. IQR&quot;</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;A. 2&quot;</span><span class="p">,</span> <span class="s2">&quot;B. 5&quot;</span><span class="p">,</span> <span class="s2">&quot;C. 8&quot;</span><span class="p">,</span> <span class="s2">&quot;D. 6&quot;</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;A. 10&quot;</span><span class="p">,</span> <span class="s2">&quot;B. 15&quot;</span><span class="p">,</span> <span class="s2">&quot;C. 5&quot;</span><span class="p">,</span> <span class="s2">&quot;D. 0&quot;</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;A. 8.4&quot;</span><span class="p">,</span> <span class="s2">&quot;B. 10&quot;</span><span class="p">,</span> <span class="s2">&quot;C. 7.6&quot;</span><span class="p">,</span> <span class="s2">&quot;D. 9&quot;</span><span class="p">]]</span>
+ 
+<span class="n">new_game</span><span class="p">()</span>
+ 
+<span class="k">while</span> <span class="n">play_again</span><span class="p">():</span>
+   <span class="n">new_game</span><span class="p">()</span>
+  
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bye!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-------------------------
+What is the formula (value-mean)/stand deviation used for?: 
+A. Z-score
+B. mean
+C. median
+D. IQR
+CORRECT!
+-------------------------
+What is the median of the following sequence of numbers 1,2,5,8,9?: 
+A. 2
+B. 5
+C. 8
+D. 6
+WRONG!
+-------------------------
+What is the standard deviation of the following sequence 5,5,15,15 ?: 
+A. 10
+B. 15
+C. 5
+D. 0
+CORRECT!
+-------------------------
+What is the mean of the following sequence 2,4,6,10,20?: 
+A. 8.4
+B. 10
+C. 7.6
+D. 9
+CORRECT!
+-------------------------
+RESULTS
+-------------------------
+Answers: A B C A 
+Guesses:  A A C A 
+Your score is: 75%
+Bye!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
