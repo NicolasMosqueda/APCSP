@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: AP Gov Notes
-categories: [markdown]
+categories: [Week 1]
 title: AP Gov Notes
 ---
 # AP Gov Notes

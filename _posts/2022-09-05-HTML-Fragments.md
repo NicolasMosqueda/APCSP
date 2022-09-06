@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: HTML Fragments Changing Theme
-categories: [markdown]
+categories: [Week 2]
 title: HTML Fragments Changing Theme
 ---
 # HTML Fragments Changing Theme
