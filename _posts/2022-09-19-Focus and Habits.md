@@ -23,5 +23,5 @@ Making time: Santo speaks on how nowadays peolpe get so caught up in work that t
 
 Sleep: Santos talked about the importance of sleep and how a lack of sleep can greatly affect a persons happiness. She mentioned a statistic of highschool students getting an average of around 4 hours of sleep per night which is far from the recommneded 8 hours. I can ensure that I get a good nights sleep every night by setting an alarm on my phone to go to bed at a certain time everynight.
 
-
+![]({{ site.baseurl }}/images/IMG_9983.jpg "Front Picture")
 
