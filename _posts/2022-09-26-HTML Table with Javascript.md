@@ -17,9 +17,8 @@ table, th, td {
 </head>
 <body>
 
-<h2>crum Team Roles</h2>
+<h2>Scrum Team Roles</h2>
 
-<p>Use the CSS border property to add a border to the table.</p>
 
 <table style="width:100%">
   <tr>
