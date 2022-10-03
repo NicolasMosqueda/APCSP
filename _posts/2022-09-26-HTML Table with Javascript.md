@@ -1,14 +1,52 @@
 ---
 toc: true
 layout: post
-description: AP Classroom
-categories: [Week 6]
-title: AP Classroom
+description: HTML Table with Javascript
+categories: [Week 5]
+title: HTML Table with Javascript
 ---
-# College Board Quiz
+# Scrum Team Roles
 
-![]({{ site.baseurl }}/images/College Board quiz.png "CollegeBoard Quiz Screenshot")
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
 
-# Reflection
+<h2>Scrum Team Roles</h2>
 
-These were very informative questions. It gave me an idea of what to expect on the AP exam. There were certain things that were a bit confusing that I should be sure to review more. A question I have is: What are future tpics that will be crucial to understand?
+
+<table style="width:100%">
+  <tr>
+    <th>Team Member</th>
+    <th>Role</th> 
+    <th>Grade</th>
+  </tr>
+  <tr>
+    <td>Nicolas Mosqueda</td>
+    <td>Frontend Dev</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>Ben Lee</td>
+    <td>Dev Ops</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>Kaylee Hou</td>
+    <td>Scrum Master</td>
+    <td>12</td>
+  </tr>
+   <tr>
+    <td>Trey Blalock</td>
+    <td>Backend Dev</td>
+    <td>12</td>
+  </tr>
+</table>
+
+</body>
+</html>
