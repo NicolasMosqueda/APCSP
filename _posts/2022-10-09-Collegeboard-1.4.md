@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: AP Classroom 1.4
-categories: [Week 6]
+categories: [Week 7]
 title: AP Classroom 1.4
 ---
 # College Board Quiz 
