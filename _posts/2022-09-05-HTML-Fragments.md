@@ -5,6 +5,9 @@ description: HTML Fragments Changing Theme
 categories: [Week 2]
 title: HTML Fragments Changing Theme
 ---
+
+{% include submenu.html %}
+
 # HTML Fragments Changing Theme
 
 
