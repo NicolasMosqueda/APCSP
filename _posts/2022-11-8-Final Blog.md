@@ -58,4 +58,3 @@ I enjoyed showing our project to different parents and students. We made a searc
 [1.1-1.3](https://nicolasmosqueda.github.io/APCSP/week%206/2022/10/02/CollegeBoard.html)
 [4.1](https://nicolasmosqueda.github.io/APCSP/week%209/2022/10/17/CB-4.1-Notes.html)
 
-![]({{ site.baseurl }}/images/jeter.jpg "Picture of Derek Jeter")
