@@ -35,7 +35,4 @@ I selected B in this question becasue I did not know that the maxPS<-50 line tak
 
 # Question 41
 
-![CB Q41](https://files.slack.com/files-pri/TUDAF53UJ-F04AAB9D1BM/image.png)
-
-
-
+![CB Q41](https://files.slack.com/files-pri/TUDAF53UJ-F04AAB9D1BM/image.png) When I answered the question I thought it was just a simple question where collegeboard was trying to trick me with all the code segments. I saw the thrid code segment which assigned 30 to r so I answered option C which was 30
