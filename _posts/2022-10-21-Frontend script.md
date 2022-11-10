@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Frontend Script
-categories: [Week 9]
+categories: [Week 12]
 title: Frontend Script
 ---
 # Frontend Project Script
