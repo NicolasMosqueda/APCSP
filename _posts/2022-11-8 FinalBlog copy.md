@@ -33,4 +33,9 @@ When answering this question I was not being careful. The answer I chose would m
 
 I selected B in this question becasue I did not know that the maxPS<-50 line takes priority over the previous box of code and sets maxPS to 50 regardless of the value of time. Option A is correct because it has the maxPS<-50 in the beginning which sets maxPS to 50 by default. Then after it states that if time is greater than 120 then maxPS is 30
 
-#
+# Question 41
+
+![CB Q41](https://files.slack.com/files-pri/TUDAF53UJ-F04AAB9D1BM/image.png)
+
+
+
