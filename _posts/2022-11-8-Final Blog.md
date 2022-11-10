@@ -44,3 +44,16 @@ I selected B in this question becasue I did not know that the maxPS<-50 line tak
 ![]({{ site.baseurl }}/images/cb q45.png "Question 45")
 
 I was confused on this question becasue I saw that count1 was value in the list that are greater than 0 which there are 2 numbers, I then added the plus 1 to get count1=3 so i slected that answer. I now understand that count1 is just number of positve values in the list which is 2 and count2 is all the other the other values in which there are 3 other number. Therefore, count1=2 and count2=3 so option b is correct
+
+# Overall Thoughts
+
+I found the quiz to be very informative of what we should have learned throughout this trimester. At first many of the questions seemed very dificult but as I read through all the code very slowly I was able to better understand the uestion and realize the question was not as hard as I orginaly thought. I think that I performed quite well on this test but I still have lots of learning to do.
+
+# Night at the Mueseum
+
+I enjoyed showing our project to different parents and students. We made a searchbar where the user could search any marvel movie or comic and a link to the marvel website would come up using an api. I was very happy that are searchbars was working during the presentations as we had lots of struggles making it. It was very cool to see other groups' projects. There were a few that I really liked such as a website that gave a fitness plan based on your height and weight along with fitness goals.
+
+# Collegeboard Notes
+
+[1.1-1.3](https://nicolasmosqueda.github.io/APCSP/week%206/2022/10/02/CollegeBoard.html)
+[4.1](https://nicolasmosqueda.github.io/APCSP/week%209/2022/10/17/CB-4.1-Notes.html)
