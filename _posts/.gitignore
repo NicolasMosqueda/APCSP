@@ -1,1 +1,10 @@
-
+#ignore from local build
+settings.inl
+Gemfile.lock
+images/copied_from_nb/
+_posts/2022-07-07-PBL-binary.md
+_posts/2022-08-28-AP-Gov-Notes.md
+_posts/2022-08-28-bash.md
+_posts/2022-09-26-Javascript.md
+_posts/2022-10-03-AP-error_testing.md
+_posts/2022-10-03-PBL-python_rapidapi.md
