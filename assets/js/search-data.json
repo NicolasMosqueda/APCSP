@@ -4,9 +4,9 @@
         "post0": {
             "title": "Ap Gov Notes",
             "content": "Forms of Government . Terms: . Autocracy - A form of government where one person is in charge . Monarchy is a type of autocracy where there is a king or queen and the power stays within the family . | Dictatorship is another form of autocracy where a single person is in control of everything . | . Democracy - A form of government where the power is spread amongst the people . Representative democracy is where the citizens elect people to represent them . | Direct democracy is where every citizen works in making decisions for the government . | . Oligarchy - A form of government where a group of people holds the power . A junta is an example of this as it is a small group of people in power . | . Theocracy - A form of government controlled by religious beliefs . Public Policy . Goals and programs our government creates and implements for society(to create order and take care of people) . | Complicated process- involves various stages and “inputs” . | Inputs: voters, media, special interest groups, politicians . | . Role of Government . What should the government do(National, state, and local) . | Answers vary. Ideas differ . | We do agree on some basic things- limited government, rule of law, democracy . | . Intro to Election Cycle . Voters/Decision Makers- NOT candidates . Party Elite- former or current elected officials, who choose the parties nominees . | Party Leaders-focused on picking the winner, are generally more moderate . | Party activists- ideological . | The Base-reliable voters for a candidate or party . | Electorate- voters . | . Most Americans are moderate voters, that being said the more moderate candidate have a higher chance of being elected . In 1972 McGovern lost by a landslide on the electoral vote because he was very left-leaning, Nixon ended up getting 520 out of 538 votes . | . Incumbent Advantage- candidates who already held office have a great advantage over their opponent . The average voter will likely choose the name they recognize on the ballot . | Candidates who already held office already have staff in place . | They already had a prior run where they gained support from voters . | Previous candidates also have the most money to advertise themsleves from donations and previous campaign, also called a war chest . | .",
-            "url": "https://nicolasmosqueda.github.io/APCSP/2022/11/09/AP-Gov-Notes.html",
-            "relUrl": "/2022/11/09/AP-Gov-Notes.html",
-            "date": " • Nov 9, 2022"
+            "url": "https://nicolasmosqueda.github.io/APCSP/2022/11/14/AP-Gov-Notes.html",
+            "relUrl": "/2022/11/14/AP-Gov-Notes.html",
+            "date": " • Nov 14, 2022"
         }
         
     
@@ -222,6 +222,17 @@
   
     
         ,"post20": {
+            "title": "Ap Gov Notes",
+            "content": "Forms of Government . Terms: . Autocracy - A form of government where one person is in charge . Monarchy is a type of autocracy where there is a king or queen and the power stays within the family . | Dictatorship is another form of autocracy where a single person is in control of everything . | . Democracy - A form of government where the power is spread amongst the people . Representative democracy is where the citizens elect people to represent them . | Direct democracy is where every citizen works in making decisions for the government . | . Oligarchy - A form of government where a group of people holds the power . A junta is an example of this as it is a small group of people in power . | . Theocracy - A form of government controlled by religious beliefs . Public Policy . Goals and programs our government creates and implements for society(to create order and take care of people) . | Complicated process- involves various stages and “inputs” . | Inputs: voters, media, special interest groups, politicians . | . Role of Government . What should the government do(National, state, and local) . | Answers vary. Ideas differ . | We do agree on some basic things- limited government, rule of law, democracy . | . Intro to Election Cycle . Voters/Decision Makers- NOT candidates . Party Elite- former or current elected officials, who choose the parties nominees . | Party Leaders-focused on picking the winner, are generally more moderate . | Party activists- ideological . | The Base-reliable voters for a candidate or party . | Electorate- voters . | . Most Americans are moderate voters, that being said the more moderate candidate have a higher chance of being elected . In 1972 McGovern lost by a landslide on the electoral vote because he was very left-leaning, Nixon ended up getting 520 out of 538 votes . | . Incumbent Advantage- candidates who already held office have a great advantage over their opponent . The average voter will likely choose the name they recognize on the ballot . | Candidates who already held office already have staff in place . | They already had a prior run where they gained support from voters . | Previous candidates also have the most money to advertise themsleves from donations and previous campaign, also called a war chest . | .",
+            "url": "https://nicolasmosqueda.github.io/APCSP/2022/08/28/AP-Gov-Notes.html",
+            "relUrl": "/2022/08/28/AP-Gov-Notes.html",
+            "date": " • Aug 28, 2022"
+        }
+        
+    
+  
+    
+        ,"post21": {
             "title": "Nicolas's First Jupyter Notebook",
             "content": "print(&quot;Hello&quot;) . Hello . print(&quot;I am very excited to learn about computer science this year&quot;) . I am very excited to learn about computer science this year .",
             "url": "https://nicolasmosqueda.github.io/APCSP/2022/08/21/first-jupyter-notebook.html",
@@ -232,7 +243,7 @@
     
   
     
-        ,"post21": {
+        ,"post22": {
             "title": "Vocab List",
             "content": "Vocab List . Vocab Explanation . Sequence | multiple steps or lines of code, must be more than one | . Repositry | A repositroy is a place or source where code is stored | . Clone | Cloning code means transferring code from one place to another | . Python | Python is one of the biggest computer programming languages | . Jupyter Notebook | Meant for Python users in order to complete web server completed tasks | . Scrum Master | The scrum master helps to facilitate the sprint by ensuring that an agile framework is followed. He/she is committed to tracking issues and maintaining scrum boards, but should also remain flexible and open to opportunities for the team to improve their workflow. | . DevOps | DevOps is the combination of cultural philosophies, practices, and tools that increases an team’s ability to deliver applications and services at high velocity: version control, integration, managing dependencies (requirements.txt), AWS deployment are some of the key functions that impact velocity. | . Frontend Developer | A front-end developer builds the front-end portion of websites and web applications—that is, the part that users actually see and interact with. | . Backend Developer | Back-end developers a build and maintain the mechanisms that process data and perform actions like data storage, security, and other server-side functions that you cannot see. | . J.son | text-based way of representing JavaScript object literals, arrays, and scalar data | . Agile | Practices like pair programming, planning sessions, sprints… | . Arrays | Stores collection of multiple items under single variable name | .",
             "url": "https://nicolasmosqueda.github.io/APCSP/week%201/2022/08/21/Vocab.html",
@@ -243,12 +254,23 @@
     
   
     
-        ,"post22": {
+        ,"post23": {
             "title": "Nicolas's First Post",
             "content": "Nicolas’s First Post . About me . Hello, my name is Nicolas Mosqueda. I am a senior and I like baseball and football. In school, my favorite subjects are math and physics. I am interested in computer science. . I know how to write in bold text, and also in italics. Here’s a list of my favorite baseball players: . Derek Jeter | Aaron Judge | Jorge Alfaro | Mariano Rivera | Mike Trout | Link to my Week 0 Ticket . Here’s my favorite baseball player, Derek Jeter: .",
             "url": "https://nicolasmosqueda.github.io/APCSP/week%200/2022/08/21/Nico-First-Post.html",
             "relUrl": "/week%200/2022/08/21/Nico-First-Post.html",
             "date": " • Aug 21, 2022"
+        }
+        
+    
+  
+    
+        ,"post24": {
+            "title": "Binary Math",
+            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | .",
+            "url": "https://nicolasmosqueda.github.io/APCSP/frontend/binary",
+            "relUrl": "/frontend/binary",
+            "date": " • Jul 7, 2022"
         }
         
     
@@ -300,12 +322,15 @@
   
 
   
+  
+
+  
 
   
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nicolasmosqueda.github.io/APCSP/robots.txt",
