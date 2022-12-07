@@ -19,4 +19,10 @@ Grade: 1/1
 
 Comments: Took notes, had a reflection, and had explanations for each question
 
+## Section 8 and 10
+
+Grade: .9/1
+
+completed all components of the assinment
+
 
