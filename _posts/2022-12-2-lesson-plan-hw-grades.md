@@ -25,4 +25,18 @@ Grade: .9/1
 
 completed all components of the assinment
 
+## Section 9 and 11
+
+Grade : .9/1
+ 
+ completed all the work, I could add explanation to my answers to make it better
+
+
+## Section 12-13
+
+Grade: .85/1
+
+Good answers all work was correct, but no explanations were given so there was no evidence of understanding of the work. The procedures were well written as well
+
+
 
