@@ -98,9 +98,9 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#unit-3-lesson-14-15">Unit 3 Lesson 14-15</a></li>
 <li class="toc-entry toc-h1"><a href="#notes">Notes</a></li>
-<li class="toc-entry toc-h1"><a href="#312-part-1-hacks">3.12 Part 1 Hacks</a></li>
-<li class="toc-entry toc-h1"><a href="#312-part-2-hacks">3.12 Part 2 Hacks</a></li>
-<li class="toc-entry toc-h1"><a href="#313-hacks">3.13 Hacks</a></li>
+<li class="toc-entry toc-h1"><a href="#hacks--mc-questions">Hacks : MC Questions</a></li>
+<li class="toc-entry toc-h1"><a href="#hacks--free-response">Hacks : Free Response</a></li>
+<li class="toc-entry toc-h1"><a href="#coding-challenges">Coding Challenges</a></li>
 <li class="toc-entry toc-h1"><a href="#reflection">Reflection</a></li>
 </ul><h1 id="unit-3-lesson-14-15">
 <a class="anchor" href="#unit-3-lesson-14-15" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Lesson 14-15</h1>
@@ -108,173 +108,56 @@ window.onload = wrap_img;
 <h1 id="notes">
 <a class="anchor" href="#notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes</h1>
 
-<p>A procedure is a named group of programming instructions that may have parameters and return values.</p>
+<p>Procedures found in software libraries are utilized to create new programs.</p>
 
-<p>Procedures can be reffered to as method or function depending on the programing language.</p>
+<p>The creation of algorithms can be greatly simplified by libraries and prewritten code.</p>
 
-<p>A procedrure call interrupts an execution of statements and makes the program execute the statements in the procedure.</p>
+<p>Libraries make complex programs simpler.</p>
 
-<p>Parameters are input values of a procedure.</p>
+<p>Application program interfaces (APIs) define how library procedures should act and be used.</p>
 
-<p>Argurments specifcy the values of the parameters when a procedure is called.</p>
+<p>Reading the documentation makes it much simpler to understand how to use libraries and APIs.</p>
 
-<p>If you have a set of statements and inside there is a procedure then when it reaches that procedure it will excute that procedure and then go back to the rest of the statments.</p>
+<p>Uses of the random function include:</p>
 
-<p>If you see a return statement you automatically end the procedure even if there is more statements</p>
+<p>#1 Creates a random number using random.randint(a, b). As the start and finish values, a and b’s values are necessary in order to set an inclusive limit on the number that can be generated. The optional step C determines the interval at which random numbers are created.</p>
 
-<p>Procedures are that a catch-all term for codes used to identify what was done to or given to a patient</p>
+<p>#2 A random integer is produced using the function random.randrange(a, b, c). As the start and finish values, a and b’s values are necessary in order to set an inclusive limit on the number that can be generated. The step that explains the type of multiple that can be formed is C. The potential value is less than b and begins at an or is a multiple of c plus a multiple of a.</p>
 
-<p>If you have a set of statements in a procedure the statement will go thought the top of the procedure to the bottom in order.</p>
+<p>#3 The function random.shuffle randomly shuffles a list’s contents.</p>
 
-<p>Procedure: is a named group of programming instructions that serves a purpose</p>
+<h1 id="hacks--mc-questions">
+<a class="anchor" href="#hacks--mc-questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks : MC Questions</h1>
 
-<p>Parameter: are input values of a procedur</p>
+<p>What does the random(a,b) function generate?
+A. A random integer from a to be exclusive B. A random integer from a to b inclusive. C. A random word from variable a to variable b exclusive. D. A random word from variable a to variable b inclusive.</p>
 
-<p>There are two types of procedures, one that returns a value or some type of data and on that just executes a block of statements</p>
+<p>Answer: B, it contains the endpoints and all of the intermediate numbers</p>
 
-<p>Modularity - the practice of breaking a complex program into smaller, independent parts or modules that can be used and reused in different parts of the program</p>
+<p>What is x, y, and z in random.randrange(x, y, z)?
+A. x = start, y = stop, z = step B. x = start, y = step, z = stop C. x = stop, y = start, z = step D. x = step, y = start, z = stop</p>
 
-<h1 id="312-part-1-hacks">
-<a class="anchor" href="#312-part-1-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.12 Part 1 Hacks</h1>
+<p>Answer: A, the order is start, stop, step</p>
 
-<p>Problem 1</p>
+<p>Which of the following is NOT part of the random library?
+A. random.item B. random.random C. random.shuffle D. random.randint</p>
 
-<p><mark>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }</mark></p>
+<p>Answer: A, the random.item function does not exist. However, random.random generates a random floating-point number between 0 and 1. random.shuffle can be used to randomly rearrange a list, and random.randint produces a random integer.</p>
 
-<p>Problem 2</p>
+<h1 id="hacks--free-response">
+<a class="anchor" href="#hacks--free-response" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks : Free Response</h1>
 
-<p><mark>True==</mark></p>
+<p>#1 Libraries allow users to access and reuse pre-written code, which can improve the efficiency of algorithms. There are many libraries available for different applications, making it easier for programmers to build more complex algorithms.</p>
 
-<p>Problem 3</p>
+<p>#2 The code starts by importing the random library. It then prompts the user to input names, which are stored in a list called names. The variable num_items is used to determine the number of items in the list. The random_choice variable uses a random number generator to select an index from the names list. The random.randint function is used to generate a value from 0 to the maximum index of the list (which is the length of the list minus 1). The software then uses the generated value to identify the person associated with that index, and prints their name.</p>
 
-<p><mark>totalFootprint ← calcFlightFootprint(2451, 118) + calcFlightFootprint(3442, 252)</mark></p>
-
-<p><mark>totalFootprint ← calcFlightFootprint((2451, 118) + (3442, 252))</mark></p>
-
-<h1 id="312-part-2-hacks">
-<a class="anchor" href="#312-part-2-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.12 Part 2 Hacks</h1>
-
-<p>PROCEDURE find a ()</p>
-
-<p>{ c – 9</p>
-
-<p>b &lt;– 9 * 9</p>
-
-<p>a &lt;– b * c</p>
-
-<p>Print (a)</p>
-
-<p>}</p>
-
-<p>What is a?</p>
-
-<p><mark>a= 729</mark></p>
-
-<p>cost ⟵ 173 tax - 10%</p>
-
-<p>PROCEDURE applytax (cost, cpercentDiscounted) { temp &lt;– 100 + percentTaxed</p>
-
-<p>temp &lt;– temp / 100</p>
-
-<p>cost &lt;– cost x temp</p>
-
-<p>Print(cost)}</p>
-
-<p>What is the cost?</p>
-
-<p><mark>cost= $190.30</mark></p>
-
-<p>Tempature - 103 Degrees</p>
-
-<p>PROCEDURE convet Fahrenheit (tempature)</p>
-
-<p>{</p>
-
-<p>Celsius &lt;– tempature - 32</p>
-
-<p>Celsius &lt;– Celsius x 5/9</p>
-
-<p>Print (Celsius)}</p>
-
-<p><mark>temperature: 39.4 degrees Celsius</mark></p>
-
-<h1 id="313-hacks">
-<a class="anchor" href="#313-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.13 Hacks</h1>
-
-<p>#1 Create a procedure that is meant to replace the top running backs yards per game in one season if the current running back has more yards per game</p>
-
-<p>Necessary Parameters: toprbyardspg(100), currentrbyards(1260), totalGames(12)</p>
-
-<p>PROCEDURE Replace the top running backs yards per game in one season if the current running back has more yards per game</p>
-
-<p>If (currentRbYards(1260) &gt; toprbyardspg(100)</p>
-
-<p>toprbyardspg &lt;– currentRbYards</p>
-
-<p>#2 Write a procedure that will allow the A+ to get to the 1, while avoiding the black boxes</p>
-
-<p>PROCEDURE GetA+to1</p>
-
-<p>MOVE_RIGHT()</p>
-
-<p>MOVE_RIGHT()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_RIGHT()</p>
-
-<p>MOVE_RIGHT()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_LEFT()</p>
-
-<p>MOVE_LEFT()</p>
-
-<p>MOVE_LEFT()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_LEFT()</p>
-
-<p>#3 Which Is the Correct Way to define the Name of a Procedure?</p>
-
-<p>A. PROCEDURE MYLIST</p>
-
-<p><mark>B. PROCEDURE MyList</mark></p>
-
-<p>C. procedure mylist</p>
-
-<p>#4 Write A Procedure That gets the BeachBall To the Green Square</p>
-
-<p>PROCEDURE Getballtosquare</p>
-
-<p>MOVE_LEFT()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_FORWARD()</p>
-
-<p>MOVE_LEFT()</p>
-
-<p>MOVE_LEFT()</p>
+<h1 id="coding-challenges">
+<a class="anchor" href="#coding-challenges" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coding Challenges</h1>
 
 <h1 id="reflection">
 <a class="anchor" href="#reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection</h1>
 
-<p>These lessons were a bit challenging at first but with perserverance I was able to understand the concepts which allowed me to perform the hacks well. The presentation was great and I learned a lot from it.</p>
+<p>I have acquired knowledge about APIs, libraries, and documentation. As part of the AP Exam project, I need to document my code, explaining its functionality and implementation. Libraries are a valuable resource because they provide pre-written code that I can use and refer to in my own programs, making the development process more efficient. Randomization is a useful technique used in many programs, including games and webpages, to introduce variability and unpredictability.</p>
 
   </div><a class="u-url" href="/APCSP/week%2015/2022/12/14/Section-14-15-Blog.html" hidden></a>
 </article>
