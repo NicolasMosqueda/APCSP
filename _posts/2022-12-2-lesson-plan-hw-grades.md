@@ -44,5 +44,17 @@ Grade: 1/1
 
 Good reflection. Requirements met. Ec executed
 
+## Section 16
+
+Grade: 0.95/1
+
+5/6; Did extra credit and notes
+
+## Section 17-18
+
+Grade: 0.9/1
+
+Met all of the requirements, added reflection, notebooks weren't working.
+
 
 
