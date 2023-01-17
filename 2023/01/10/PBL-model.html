@@ -1,0 +1,333 @@
+<p>{
+ “cells”: [
+  {
+   “attachments”: {},
+   “cell_type”: “markdown”,
+   “metadata”: {},
+   “source”: [
+    “# Model and Object-Oriented Programming\n”,
+    “&gt; Object Oriented Programming is a part of learning Python.  The objective of this blog is to introduce OOP with the intention of PBL task to create a database.  The foundations for a database is defining a Class and understanding instance data and methods.  A database is often a focus of backend coding as it will store persistent data, that can be recalled after the immediate session is closed.\n”,
+    “\n”,
+    “- title: Model and Object-Oriented Programming\n”,
+    “- toc: true\n”,
+    “- categories: []\n”,
+    “- image: /images/python.png\n”,
+    “- type: pbl\n”,
+    “- week: 18”
+   ]
+  },
+  {
+   “attachments”: {},
+   “cell_type”: “markdown”,
+   “metadata”: {},
+   “source”: [
+    “## Class and Object Terms\n”,
+    “&gt; The foundations of Object-Oriented Programming is defining a <strong><em>Class</em></strong>  \n”,
+    “* In Object-Oriented Programming (OOP), a class is a blueprint for creating an <strong><em>Object</em></strong>. (a data structure).  An Object is used like many other Python variables.\n”,
+    “* A Class has …\n”,
+    “    * a collection of data, these are called <strong><em>Attributes</em></strong> and in Python are pre-fixed using the keyword <strong><em>self</em></strong>\n”,
+    “    * a collection of Functions/Procedures.  These are called <strong><em>Methods** when they exist inside a Class definition.\n”,
+    “</em> An Object is created from the Class/Template.  Characteristics of objects …\n”,
+    “   * an Object is an **<em>Instance</em></strong> of the Class/Template\n”,
+    “   * there can be many Objects created from the same Class\n”,
+    “   * each Object contains its own <strong><em>Instance Data</em></strong>\n”,
+    “   * the data is setup by the <strong><em>Constructor</em></strong>, this is the "<strong>init</strong>" method in a Python class\n”,
+    “   * all methods in the Class/Template become part of the Object, methods are accessed using <strong><em>dot notation</em></strong> (object.method())\n”,
+    “* A Python Class allow for the definition of @ decorators, these allow access to instance data without the use of functions …\n”,
+    “    * @property decorator (aka getter).  This enables developers to reference/get instance data in a shorthand fashion (object.name versus object.get_name())\n”,
+    “    * @name.setter decorator (aka setter).  This enables developers to update/set instance data in a shorthand fashion (object.name = "John" versus object.set_name("John"))\n”,
+    “    * observe all instance data (self.<em>name, self._email …) are prefixed with "</em>", this convention allows setters and getters to work with more natural variable name (name, email …)”
+   ]
+  },
+  {
+   “cell_type”: “markdown”,
+   “metadata”: {},
+   “source”: [
+    “## Class and Object Code”
+   ]
+  },
+  {
+   “cell_type”: “code”,
+   “execution_count”: 5,
+   “metadata”: {},
+   “outputs”: [
+    {
+     “name”: “stdout”,
+     “output_type”: “stream”,
+     “text”: [
+      “Test 1, find user 3\n”,
+      “name: "Nicolas Mosqueda", id: "nic", psw: "sha256$EXO…"\n”,
+      “name: "Benjamin Lee", id: "ben", psw: "sha256$JyQ…"\n”,
+      “* name: "Luke Riggins", id: "luk", psw: "sha256$Nae…"\n”,
+      “name: "Arnav Kanekar", id: "arn", psw: "sha256$kdm…"\n”,
+      “Test 2, change user 3\n”,
+      “name: "Nicolas Mosqueda", id: "nic", psw: "sha256$EXO…"\n”,
+      “name: "Benjamin Lee", id: "ben", psw: "sha256$JyQ…"\n”,
+      “* name: "Sean Yeung", id: "sy1764", psw: "sha256$5H2…"\n”,
+      “name: "Arnav Kanekar", id: "arn", psw: "sha256$kdm…"\n”,
+      “Test 3, make a dictionary\n”,
+      “[{"<em>name": "Nicolas Mosqueda", "_uid": "nic", "_password": "sha256$EXORcOBW3mAksCNo$6d143d74baff52a98ff19ae8ead685a90c3a6a9dc4987b94504fc6ad0ea3396a", "_classOf": "2023", "_dob": "2005-07-19"}, {"_name": "Benjamin Lee", "_uid": "ben", "_password": "sha256$JyQdavxrsPbrpVKV$3fce38018c84306c17df95912b2fc215c5eabc3e2153029b4191fa09bd2197a4", "_classOf": "2023", "_dob": "2005-01-19"}, {"_name": "Sean Yeung", "_uid": "sy1764", "_password": "sha256$5H2KuNagHeKfg50r$e84c9433614f2210760e12c3baff2f8859f481775459ee0b482db9a61ff075e8", "_classOf": "2012", "_dob": "2000-1-16"}, {"_name": "Arnav Kanekar", "_uid": "arn", "_password": "sha256$kdm5hyCBwMAC2Oh3$c431df979ed6db2cace37a28fe287ec14e6f0aa16ac94742ea877c7ba489c105", "_classOf": "2023", "_dob": "2005-5-19"}]\n”,
+      “Test 4, make a dictionary\n”,
+      “[{"_name": "Nicolas Mosqueda", "_uid": "nic", "_password": "sha256$EXORcOBW3mAksCNo$6d143d74baff52a98ff19ae8ead685a90c3a6a9dc4987b94504fc6ad0ea3396a", "_classOf": "2023", "_dob": "2005-07-19"}, {"_name": "Benjamin Lee", "_uid": "ben", "_password": "sha256$JyQdavxrsPbrpVKV$3fce38018c84306c17df95912b2fc215c5eabc3e2153029b4191fa09bd2197a4", "_classOf": "2023", "_dob": "2005-01-19"}, {"_name": "Sean Yeung", "_uid": "sy1764", "_password": "sha256$5H2KuNagHeKfg50r$e84c9433614f2210760e12c3baff2f8859f481775459ee0b482db9a61ff075e8", "_classOf": "2012", "_dob": "2000-1-16"}, {"_name": "Arnav Kanekar", "_uid": "arn", "_password": "sha256$kdm5hyCBwMAC2Oh3$c431df979ed6db2cace37a28fe287ec14e6f0aa16ac94742ea877c7ba489c105", "_classOf": "2023", "_dob": "2005-5-19"}]\n”
+     ]
+    }
+   ],
+   “source”: [
+    “\n”,
+    “# Werkzeug is a collection of libraries that can be used to create a WSGI (Web Server Gateway Interface)\n”,
+    “# A gateway in necessary as a web server cannot communicate directly with Python.\n”,
+    “# In this case, imports are focused on generating hash code to protect passwords.\n”,
+    “from werkzeug.security import generate_password_hash, check_password_hash\n”,
+    “import json\n”,
+    “from datetime import date\n”,
+    “\n”,
+    “# Define a User Class/Template\n”,
+    “# – A User represents the data we want to manage\n”,
+    “class User:    \n”,
+    “    # constructor of a User object, initializes the instance variables within object (self)\n”,
+    “    def <strong>init</strong>(self, name, uid, password, classOf, dob):\n”,
+    “        self._name = name    # variables with self prefix become part of the object, \n”,
+    “        self._uid = uid\n”,
+    “        self.set_password(password)\n”,
+    “        self.classOf = classOf\n”,
+    “        self.dob = dob \n”,
+    “        \n”,
+    “    # a name getter method, extracts name from object\n”,
+    “    @property\n”,
+    “    def name(self):\n”,
+    “        return self._name\n”,
+    “    \n”,
+    “    # a setter function, allows name to be updated after initial object creation\n”,
+    “    @name.setter\n”,
+    “    def name(self, name):\n”,
+    “        self._name = name\n”,
+    “    \n”,
+    “    # a getter method, extracts email from object\n”,
+    “    @property\n”,
+    “    def uid(self):\n”,
+    “        return self._uid\n”,
+    “    \n”,
+    “    # a setter function, allows name to be updated after initial object creation\n”,
+    “    @uid.setter\n”,
+    “    def uid(self, uid):\n”,
+    “        self._uid = uid\n”,
+    “        \n”,
+    “    # check if uid parameter matches user id in object, return boolean\n”,
+    “    def is_uid(self, uid):\n”,
+    “        return self._uid == uid\n”,
+    “    \n”,
+    “    @property\n”,
+    “    def password(self):\n”,
+    “        return self._password[0:10] + "…" # because of security only show 1st characters\n”,
+    “\n”,
+    “    # update password, this is conventional setter\n”,
+    “    def set_password(self, password):\n”,
+    “        """Create a hashed password."""\n”,
+    “        self._password = generate_password_hash(password, method=’sha256’)\n”,
+    “\n”,
+    “    # check password parameter versus stored/encrypted password\n”,
+    “    def is_password(self, password):\n”,
+    “        """Check against hashed password."""\n”,
+    “        result = check_password_hash(self._password, password)\n”,
+    “        return result\n”,
+    “    \n”,
+    “    @property \n”,
+    “    def classOf(self):\n”,
+    “        return self._classOf\n”,
+    “\n”,
+    “    @classOf.setter\n”,
+    “    def classOf(self, classOf):\n”,
+    “        self._classOf = classOf\n”,
+    “        \n”,
+    “    @property\n”,
+    “    def dob(self):\n”,
+    “        return self._dob\n”,
+    “    \n”,
+    “    @dob.setter\n”,
+    “    def dob(self, dob):\n”,
+    “        self._dob = dob \n”,
+    “        \n”,
+    “    # output content using str(object) in human readable form, uses getter\n”,
+    “    def <strong>str</strong>(self):\n”,
+    “        return f’name: "{self.name}", id: "{self.uid}", psw: "{self.password}"‘\n”,
+    “\n”,
+    “    # output command to recreate the object, uses attribute directly\n”,
+    “    def <strong>repr</strong>(self):\n”,
+    “        return f’Person(name={self._name}, uid={self._uid}, password={self._password})’\n”,
+    “\n”,
+    “\n”,
+    “# tester method to print users\n”,
+    “def tester(users, uid, psw, classOf, dob):\n”,
+    “    result = None\n”,
+    “    for user in users:\n”,
+    “        # test for match in database\n”,
+    “        if user.uid == uid and user.is_password(psw):  # check for match\n”,
+    “            print("* ", end="")\n”,
+    “            result = user\n”,
+    “        # print using <strong>str</strong> method\n”,
+    “        print(str(user))\n”,
+    “    return result\n”,
+    “        \n”,
+    “\n”,
+    “# place tester code inside of special if!  This allows include without tester running\n”,
+    “if <strong>name</strong> == "<strong>main</strong>":\n”,
+    “\n”,
+    “    # define user objects\n”,
+    “    u1 = User(name=’Nicolas Mosqueda’, uid=’nic’, password=’123nic’, classOf=’2023’, dob=’2005-07-19’)\n”,
+    “    u2 = User(name=’Benjamin Lee’, uid=’ben’, password=’123ben’, classOf=’2023’, dob=’2005-01-19’)\n”,
+    “    u3 = User(name=’Luke Riggins’, uid=’luk’, password=’123luk’, classOf=’2023’, dob=’2004-12-13’)\n”,
+    “    u4 = User(name=’Arnav Kanekar’, uid=’arn’, password=’123arn’, classOf=’2023’, dob=’2005-5-19’)\n”,
+    “    \n”,
+    “\n”,
+    “    # put user objects in list for convenience\n”,
+    “    users = [u1, u2, u3, u4]\n”,
+    “\n”,
+    “    # Find user\n”,
+    “    print("Test 1, find user 3")\n”,
+    “    u = tester(users, u3.uid, "123luk", "2023", "2004-12-13")\n”,
+    “\n”,
+    “\n”,
+    “    # Change user\n”,
+    “    print("Test 2, change user 3")\n”,
+    “    u.name = "Sean Yeung"\n”,
+    “    u.uid = "sy1764"\n”,
+    “    u.set_password("123qwerty")\n”,
+    “    u.classOf = "2012"\n”,
+    “    u.dob = "2000-1-16"\n”,
+    “    u = tester(users, u.uid, "123qwerty", "2012", "2000-1-16")\n”,
+    “\n”,
+    “\n”,
+    “    # Make dictionary\n”,
+    “    ‘’’ \n”,
+    “    The <strong>dict</strong> in Python represents a dictionary or any mapping object that is used to store the attributes of the object. \n”,
+    “    Every object in Python has an attribute that is denoted by <strong>dict</strong>. \n”,
+    “    Use the json.dumps() method to convert the list of Users to a JSON string.\n”,
+    “    ‘’‘\n”,
+    “    print("Test 3, make a dictionary")\n”,
+    “    json_string = json.dumps([user.<strong>dict</strong> for user in users]) \n”,
+    “    print(json_string)\n”,
+    “\n”,
+    “    print("Test 4, make a dictionary")\n”,
+    “    json_string = json.dumps([vars(user) for user in users]) \n”,
+    “    print(json_string)”
+   ]
+  },
+  {
+   “attachments”: {},
+   “cell_type”: “markdown”,
+   “metadata”: {},
+   “source”: [
+    “## Hacks\n”,
+    “&gt; Add new attributes/variables to the Class.  Make class specific to your CPT work.\n”,
+    “- Add classOf attribute to define year of graduation\n”,
+    “    - Add setter and getter for classOf\n”,
+    “- Add dob attribute to define date of birth\n”,
+    “    - This will require investigation into Python datetime objects as shown in example code below\n”,
+    “    - Add setter and getter for dob\n”,
+    “- Add instance variable for age, make sure if dob changes age changes\n”,
+    “    - Add getter for age, but don’t add/allow setter for age\n”,
+    “- Update and format tester function to work with changes\n”,
+    “\n”,
+    “&gt; Start a class design for each of your own Full Stack CPT sections of your project\n”,
+    “- Use new <code class="language-plaintext highlighter-rouge">code cell</code> in this notebook\n”,
+    “- Define _init</em> and self attributes\n”,
+    “- Define setters and getters\n”,
+    “- Make a tester”
+   ]
+  },
+  {
+   “cell_type”: “markdown”,
+   “metadata”: {},
+   “source”: [
+    “## Start Code for Hacks”
+   ]
+  },
+  {
+   “cell_type”: “code”,
+   “execution_count”: 3,
+   “metadata”: {},
+   “outputs”: [
+    {
+     “name”: “stdout”,
+     “output_type”: “stream”,
+     “text”: [
+      “17\n”
+     ]
+    }
+   ],
+   “source”: [
+    “from datetime import date\n”,
+    “\n”,
+    “def calculate_age(born):\n”,
+    “    today = date.today()\n”,
+    “    return today.year - born.year - ((today.month, today.day) &lt; (born.month, born.day))\n”,
+    “\n”,
+    “dob = date(2005, 7, 19)\n”,
+    “age = calculate_age(dob)\n”,
+    “print(age)”
+   ]
+  },
+  {
+   “cell_type”: “code”,
+   “execution_count”: 5,
+   “metadata”: {},
+   “outputs”: [
+    {
+     “name”: “stdout”,
+     “output_type”: “stream”,
+     “text”: [
+      “Buffalo Bills\n”
+     ]
+    }
+   ],
+   “source”: [
+    “class NFLTeam:\n”,
+    “    def <strong>init</strong>(self, name, ):\n”,
+    “        self.name = name\n”,
+    “\n”,
+    “        \n”,
+    “    def set_name(self, name):\n”,
+    “        self.name = name\n”,
+    “        \n”,
+    “    def get_name(self):\n”,
+    “        return self.name\n”,
+    “\n”,
+    “team = NFLTeam("Buffalo Bills")\n”,
+    “print(team.get_name()) \n”,
+    “\n”
+   ]
+  },
+  {
+   “cell_type”: “markdown”,
+   “metadata”: {},
+   “source”: []
+  }
+ ],
+ “metadata”: {
+  “kernelspec”: {
+   “display_name”: “base”,
+   “language”: “python”,
+   “name”: “python3”
+  },
+  “language_info”: {
+   “codemirror_mode”: {
+    “name”: “ipython”,
+    “version”: 3
+   },
+   “file_extension”: “.py”,
+   “mimetype”: “text/x-python”,
+   “name”: “python”,
+   “nbconvert_exporter”: “python”,
+   “pygments_lexer”: “ipython3”,
+   “version”: “3.9.12”
+  },
+  “orig_nbformat”: 4,
+  “vscode”: {
+   “interpreter”: {
+    “hash”: “e3ae093631746b1a0e3e5a1959ce4a8e807acbb1b7faf1bd448ef5cddc7d3c02”
+   }
+  }
+ },
+ “nbformat”: 4,
+ “nbformat_minor”: 2
+}</p>
