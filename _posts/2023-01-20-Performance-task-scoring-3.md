@@ -34,8 +34,7 @@ title: Performance Scoring Task 3
 | Managing Complexity | 0 | 0 | does not explain how the code managaes complexity  |
 | Procedural Abstraction | 0 | 0 | does not properly explain how procedure contributes ot overall functionality of the program |
 | Algorithm Implementation | 0 | 0 | the student developed algorithm does not include iteration |
-| Testing | 1 | 0 | descirbes two different calls for a procedure - The response describes two calls from the specified procedure, rather than two calls to the
-specified procedure. |
+| Testing | 1 | 0 | descirbes two different calls for a procedure - The response describes two calls from the specified procedure, rather than two calls to the specified procedure. |
 
 # Submission 4
 
@@ -45,8 +44,7 @@ specified procedure. |
 | Managing Complexity | 1 | 1 | has a program code segment that includes a list and explains how the list manages complexity |
 | Procedural Abstraction | 1 | 1 | The project includes two code segments and identifies what each of the segment does |
 | Algorithm Implementation | 1 | 1 | includes a student developed algorithm with sequencing, selection, and iteration |
-| Testing | 1 | 0 | descirbes two different calls for a procedure - The response does not describe specific arguments that are passed through the parameters.
-Rather the response explains the alternate coding segments if they were used.|
+| Testing | 1 | 0 | descirbes two different calls for a procedure - The response does not describe specific arguments that are passed through the parameters.Rather the response explains the alternate coding segments if they were used.|
 
 
 # Summary
