@@ -14,11 +14,17 @@ Well I do feel as if Night at the Museum was a bit rushed, I do not think I met 
 
 ![]({{ site.baseurl }}/images/nm_photo3.jpg "CS NM")
 
+This was a compyter science project about a website for adventure. The website provides information for an adventure that the user may want to go on. What I really liked about this project is that I could see myself using it in my life
+
 # Photography
 
 ![]({{ site.baseurl }}/images/nm_photo.jpg "Photography NM")
+
+This project was from photography that really caught my eye. I really like cars and the licture captures a beautiful BMW that really stands out with the background chosen. I really liked this project because I would love to own a BMW when I am older.
+
 
 # Ceramics
 
 ![]({{ site.baseurl }}/images/nm_photo2.jpg "Ceramics NM")
 
+This project was ceramics. It is Squidwards house from Spongebob. This caught my attention because Spongebob was ine if my favorite shows as a child. I took Ceramics previously so I understand the dificulty it took to create something like this.
