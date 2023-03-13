@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      15 min read
     
 </span></p>
 
@@ -183,11 +183,11 @@ window.onload = wrap_img;
 </blockquote>
 <p>Describe some of the meta data and considerations when managing Image files.  Describe how these relate to Data Compression ...</p>
 <ul>
-<li>File Type, PNG and JPG are two types used in this lab: <strong>Not every file type is compatible for the same type of resizing, compression, etc. For instance, a jpg and png file may not use the same type of compression method.</strong>
+<li>File Type, PNG and JPG are two types used in this lab: <strong>Different file types may require different methods of resizing and compression.</strong>
 </li>
-<li>Size, height and width, number of pixels: <strong>When managing image files, the height, width, and size can be adjusted when compressing. Later on in my hacks, we can see how I reduced the height and width of an original jpg file by 4x.</strong>
+<li>Size, height and width, number of pixels: <strong>Height, width, and size can be adjusted when compressing image files.</strong>
 </li>
-<li>Visual perception, lossy compression: <strong>Lossy compression is when the file size of an image is compressed, and the visual perception experience of the image deteriorates; for instance, an image's quality becomes more fuzzy and less clear.</strong>
+<li>Visual perception, lossy compression: <strong>Lossy compression reduces file size but can decrease image quality.</strong>
 </li>
 </ul>
 
@@ -215,19 +215,19 @@ window.onload = wrap_img;
 <blockquote>
 <p>File paths are different on Windows versus Mac and Linux.  This can cause problems in a project as you work and deploy on different Operating Systems (OS's), pathlib is a solution to this problem.</p>
 <ul>
-<li>What are commands you use in terminal to access files?:<strong>cd to change directory, ls to list the files in a directory, and cat to read the insides of a file through terminal.</strong>- What are the command you use in Windows terminal to access files? <strong>cd is still used to change directory and dir is more often used to list the files in a directory.</strong>
+<li>What are commands you use in terminal to access files?:<strong>"cd" changes directory, "ls" lists files, and "cat" reads file contents through terminal.</strong>- What are the command you use in Windows terminal to access files? <strong>cd is still used to change directory and dir is more often used to list the files in a directory.</strong>
 </li>
-<li>What are some of the major differences? <strong>Some of the commands to view files may be different, and Linux uses forward slashes while Windows uses backwards slashes, making the absolute directory paths different between the two OSs.</strong>
+<li>What are some of the major differences? <strong>Commands and directory paths may differ between Linux and Windows.</strong>
 </li>
 </ul>
 </blockquote>
 <p>Provide what you observed, struggled with, or leaned while playing with this code.</p>
 <ul>
-<li>Why is path a big deal when working with images? <strong>Path is a big deal, as all images are stored in folders, and to access those images, the path has to be correct.</strong>
+<li>Why is path a big deal when working with images? <strong>Correct path is necessary to access images stored in folders.</strong>
 </li>
-<li>How does the meta data source and label relate to Unit 5 topics? <strong>Unit 5 was about programs that can analyze data. The meta data source and label relates to these topics, since metadata contains all of the unique information for an image, and the data can be outputted onto the screen from a program.</strong>
+<li>How does the meta data source and label relate to Unit 5 topics? <strong>Meta data and labels relate to data analysis, as metadata contains unique information for an image and can be outputted by a program.</strong>
 </li>
-<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images? <strong>IPython is a Python interactive shell which can be utilized to display images. Furthermore, Pandas can be used as an imported module to extract certain metadata from these images.</strong>
+<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images? <strong>IPython can display images and Pandas can extract metadata from them.</strong>
 </li>
 </ul>
 
@@ -331,7 +331,7 @@ window.onload = wrap_img;
 <a class="anchor" href="#base64" aria-hidden="true"><span class="octicon octicon-link"></span></a>base64<a class="anchor-link" href="#base64"> </a>
 </h3>
 <blockquote>
-<p>Image formats (JPG, PNG) are often called <strong>*Binary File formats</strong>, it is difficult to pass these over HTTP.   Thus, <a href="https://en.wikipedia.org/wiki/Base64">base64</a> converts binary encoded data (8-bit, ASCII/Unicode) into a text encoded scheme (24 bits, 6-bit Base64 digits).  Thus base64 is used to transport and embed binary images into textual assets such as HTML and CSS.- How is Base64 similar or different to Binary and Hexadecimal?: <strong>Base64 is similar to binary and hex, since it is an encoding format which can convert a normal string/number into a series of encoded characters. It is different from binary and hexadecimal in the base that it uses. Base64 uses base 64 (0-63), while binary uses base 2 (0-1) and hexadecimal uses base 16 (0-9 and A-F).</strong></p>
+<p>Image formats (JPG, PNG) are often called <strong>*Binary File formats</strong>, it is difficult to pass these over HTTP.   Thus, <a href="https://en.wikipedia.org/wiki/Base64">base64</a> converts binary encoded data (8-bit, ASCII/Unicode) into a text encoded scheme (24 bits, 6-bit Base64 digits).  Thus base64 is used to transport and embed binary images into textual assets such as HTML and CSS.- How is Base64 similar or different to Binary and Hexadecimal?: <strong>Base64 is an encoding format that converts a string/number into a series of encoded characters using base 64, which is different from binary (base 2) and hexadecimal (base 16).</strong></p>
 <ul>
 <li>Translate first 3 letters of your name to Base64.: <strong>Var --&gt; VmFy</strong>
 </li>
@@ -349,9 +349,9 @@ window.onload = wrap_img;
 <blockquote>
 <p>Input and Output (I/O) is a fundamental of all Computer Programming. Input/output (I/O) buffering is a technique used to optimize I/O operations.  In large quantities of data, how many frames of input the server currently has queued is the buffer.  In this example, there is a very large picture that lags.</p>
 <ul>
-<li>Where have you been a consumer of buffering?:<strong>I have been a consumer of buffering when watching movies/TV shows online on sites such as 123movies, Soap2Day, etc.</strong>- From your consumer experience, what effects have you experienced from buffering? <strong>From buffering, the video/movie file often lags very consistently, and some parts of the video are simply unable to load, despite refreshing the page. This creates a bad movie watching experience, as parts of the movie are simply cut out.</strong>
+<li>Where have you been a consumer of buffering?:<strong>Buffering while streaming movies/TV shows online can cause consistent lag and prevent parts of the video from loading properly, resulting in a poor viewing experience.</strong>- From your consumer experience, what effects have you experienced from buffering? <strong>I have experiecned lagging due to buffering while watching videos and movies</strong>
 </li>
-<li>How do these effects apply to images?: <strong>Buffering can be used to add certain edits to the features of images, such as greyscale, redscale, etc.</strong>
+<li>How do these effects apply to images?: <strong>Buffering can also be used to add effects to images, such as greyscale or redscale.</strong>
 </li>
 </ul>
 </blockquote>
@@ -368,11 +368,11 @@ window.onload = wrap_img;
 <blockquote>
 <p>Introduction to creating meta data and manipulating images.  Look at each procedure and explain the the purpose and results of this program.  Add any insights or challenges as you explored this program.</p>
 <ul>
-<li>Does this code seem like a series of steps are being performed?:<strong>Yes, it seems like a series of steps are being performed to manipulate the images.</strong>- Describe Grey Scale algorithm in English or Pseudo code?: <strong>First, the series of images are prepared and added to the "images" dictionary. Then, to get the greyscale of the image, the average of all the pixels are taken, and the new image is loaded based on the averages.</strong>
+<li>Does this code seem like a series of steps are being performed?:<strong>It appears that a series of steps are being carried out to manipulate the images.</strong>- Describe Grey Scale algorithm in English or Pseudo code?: <strong>Initially, the images are prepared and added to the "images" dictionary. To obtain the greyscale of the image, the average of all pixels is calculated, and a new image is loaded based on the averages.</strong>
 </li>
-<li>Describe scale image?  What is before and after on pixels in three images?: <strong>Scale image is a feature allowing for the images to get scaled up or down in size. Before scaling, the pixels are of a larger size, but after the averages of all the pixels are taken, they are compressed down to a smaller size.</strong>
+<li>Describe scale image?  What is before and after on pixels in three images?: <strong>The scale image function allows for the images to be resized. Before resizing, the pixels are larger, but after averaging all the pixels, they are compressed to a smaller size.</strong>
 </li>
-<li>Is scale image a type of compression?  If so, line it up with College Board terms described?: <strong>Yes, scaling an image is a type of compression: lossy compression. This is where the image file size is reduced, but the image quality is also deteriorated.</strong>
+<li>Is scale image a type of compression?  If so, line it up with College Board terms described?: <strong>Scaling an image is a form of lossy compression, where the file size of the image is reduced, but the image quality is also degraded.</strong>
 </li>
 </ul>
 </blockquote>
@@ -648,7 +648,7 @@ Scaled size:  (320, 240)
 <a class="anchor" href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-..." aria-hidden="true"><span class="octicon octicon-link"></span></a>Additionally, review all the imports in these three demos.  Create a definition of their purpose, specifically these ...<a class="anchor-link" href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-..."> </a>
 </h2>
 <ul>
-<li>PIL:<strong>Stands for Python Imaging Library, and it adds many capabilities for processing different types of images. It is an open-source library, and it is often used to manipulate imported image properties.</strong>- numpy: <strong>This is another type of library that allows for the processing of mathematical functions in programs.</strong>
+<li>PIL:<strong>Stands for Python Imaging Library, and adds many capabilities for processing different types of images.</strong>- numpy: <strong>This is a type of library that allows for the processing of mathematical functions in programs.</strong>
 </li>
 <li>base64: <strong>This is an encoding algorithm representing binary data as text.</strong>
 </li>
