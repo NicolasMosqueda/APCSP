@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -1467,6 +1467,88 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 Please also refer to the documentation for alternative solver options:
     https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
   n_iter_i = _check_optimize_result(
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/baseball_stats.json'</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Shape of DataFrame:"</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"First 5 rows of DataFrame:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Median of the 'home_runs' column:"</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">'home_runs'</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Mode of the 'team' column:"</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">'team'</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Shape of DataFrame: (5, 8)
+First 5 rows of DataFrame:
+              name                team           position  at_bats  hits  \
+0  Alex Rodriguez    New York Yankees      Third Baseman      601   181   
+1     David Ortiz      Boston Red Sox  Designated Hitter      571   182   
+2     Derek Jeter    New York Yankees          Shortstop      634   206   
+3  Miguel Cabrera      Detroit Tigers      First Baseman      555   193   
+4      Mike Trout  Los Angeles Angels         Outfielder      559   190   
+
+   home_runs  runs_batted_in  batting_average  
+0         35             121            0.301  
+1         47             137            0.318  
+2         10              67            0.324  
+3         44             139            0.348  
+4         30              83            0.339  
+Missing values in DataFrame:
+ name               0
+team               0
+position           0
+at_bats            0
+hits               0
+home_runs          0
+runs_batted_in     0
+batting_average    0
+dtype: int64
+Statistics of numerical columns in DataFrame:
+           at_bats        hits  home_runs  runs_batted_in  batting_average
+count    5.000000    5.000000   5.000000        5.000000         5.000000
+mean   584.000000  190.400000  33.200000      109.400000         0.326000
+std     33.256578   10.114346  14.652645       32.661904         0.018344
+min    555.000000  181.000000  10.000000       67.000000         0.301000
+25%    559.000000  182.000000  30.000000       83.000000         0.318000
+50%    571.000000  190.000000  35.000000      121.000000         0.324000
+75%    601.000000  193.000000  44.000000      137.000000         0.339000
+max    634.000000  206.000000  47.000000      139.000000         0.348000
+Median of the 'home_runs' column: 35.0
+Mode of the 'team' column: 0    New York Yankees
+Name: team, dtype: object
 </pre>
 </div>
 </div>
