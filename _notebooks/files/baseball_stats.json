@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Alex Rodriguez",
+        "team": "New York Yankees",
+        "position": "Third Baseman",
+        "at_bats": 601,
+        "hits": 181,
+        "home_runs": 35,
+        "runs_batted_in": 121,
+        "batting_average": 0.301
+    },
+    {
+        "name": "David Ortiz",
+        "team": "Boston Red Sox",
+        "position": "Designated Hitter",
+        "at_bats": 571,
+        "hits": 182,
+        "home_runs": 47,
+        "runs_batted_in": 137,
+        "batting_average": 0.318
+
+    },
+    {
+        "name": "Derek Jeter",
+        "team": "New York Yankees",
+        "position": "Shortstop",
+        "at_bats": 634,
+        "hits": 206,
+        "home_runs": 10,
+        "runs_batted_in": 67,
+        "batting_average": 0.324
+    },
+    {
+        "name": "Miguel Cabrera",
+        "team": "Detroit Tigers",
+        "position": "First Baseman",
+        "at_bats": 555,
+        "hits": 193,
+        "home_runs": 44,
+        "runs_batted_in": 139,
+        "batting_average": 0.348
+    },
+    {
+        "name": "Mike Trout",
+        "team": "Los Angeles Angels",
+        "position": "Outfielder",
+        "at_bats": 559,
+        "hits": 190,
+        "home_runs": 30,
+        "runs_batted_in": 83,
+        "batting_average": 0.339
+    }
+]
