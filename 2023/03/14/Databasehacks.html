@@ -251,7 +251,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>New baseball with  is added.
+<pre>New baseball with Juan Soto is added.
 </pre>
 </div>
 </div>
@@ -280,19 +280,19 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
 
-    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/movies.db'</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/baseball.db'</span>
     <span class="c1"># Connecting to the database, create cursor to execute the SQL command</span>
     <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
     
-    <span class="c1"># Fetch all the records from movies table</span>
-    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM movies'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+    <span class="c1"># Fetch all the records from baseball table</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM baseball'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"No movies"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"No baseball"</span><span class="p">)</span>
 
     <span class="c1"># Closing cursor and connection</span>
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -311,10 +311,10 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Moana', 'Disney', 'Moana', '95%')
-(2, 'Kung Fu Panda', 'Dreamworks', 'Po', '87%')
-(3, 'Inside Out', 'Disney', 'Joy', '98%')
-(4, 'Coco', 'Disney', 'Miguel', '97%')
+<pre>(1, 'Mike Trout', 'Angels', 'Center Field', '31')
+(2, '', '', '', '')
+(3, 'Fernando Tatis', 'Padres', 'Right Field', '24')
+(4, 'Juan Soto', 'Padres', 'Right Field', '24')
 </pre>
 </div>
 </div>
@@ -343,25 +343,25 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="c1"># updating rottentomatoes</span>
+<span class="c1"># updating review</span>
 <span class="k">def</span> <span class="nf">update</span><span class="p">():</span>  
     
-    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/movies.db'</span>
-    <span class="n">movieId</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a movie id to update the rottentomatoes"</span><span class="p">)</span>
-    <span class="n">rottentomatoes</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter new rottentomatoes"</span><span class="p">)</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/baseball.db'</span>
+    <span class="n">baseballId</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a baseball id to update the review"</span><span class="p">)</span>
+    <span class="n">positon</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter new position"</span><span class="p">)</span>
 
    <span class="c1"># Connecting to the database, create cursor to execute the SQL command</span>
     <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
     <span class="k">try</span><span class="p">:</span>
-        <span class="c1"># Updating rottentomatoes for the movie</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE movies SET _rottentomatoes = ? WHERE _id = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">rottentomatoes</span><span class="p">,</span> <span class="n">movieId</span><span class="p">))</span>
+        <span class="c1"># Updating review for the basketball</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE baseball SET _position = ? WHERE _id = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">positon</span><span class="p">,</span> <span class="n">baseballId</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"rottentomatoes for the movie is updated to </span><span class="si">{</span><span class="n">rottentomatoes</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Review for the baseball is updated to </span><span class="si">{</span><span class="n">positon</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
             <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"movie not found"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"baseball not found"</span><span class="p">)</span>
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Error occurred"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
         
@@ -383,7 +383,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>rottentomatoes for the movie is updated to 95%
+<pre>Review for the baseball is updated to shortstop
 </pre>
 </div>
 </div>
@@ -414,19 +414,19 @@ window.onload = wrap_img;
 
 <span class="k">def</span> <span class="nf">delete</span><span class="p">():</span>
     
-    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/movies.db'</span>
-    <span class="n">movieId</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter movie id to delete"</span><span class="p">)</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/baseball.db'</span>
+    <span class="n">baseballId</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter baseballId to delete"</span><span class="p">)</span>
 
     <span class="c1"># Connecting to the database, create cursor to execute the SQL command</span>
     <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
     
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM movies WHERE _id = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">movieId</span><span class="p">,))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM baseball WHERE _id = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">baseballId</span><span class="p">,))</span>
         <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">movieId</span><span class="si">}</span><span class="s2"> does not exist"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">baseballId</span><span class="si">}</span><span class="s2"> does not exist"</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Successfully deleted movie with id </span><span class="si">{</span><span class="n">movieId</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Successfully deleted basketball with id </span><span class="si">{</span><span class="n">baseballId</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Error occurred: "</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
@@ -448,7 +448,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Successfully deleted movie with id 2
+<pre>Successfully deleted basketball with id 2
 </pre>
 </div>
 </div>
