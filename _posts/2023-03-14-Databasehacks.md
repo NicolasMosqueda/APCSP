@@ -257,7 +257,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Review for the baseball is updated to center field
+<pre>Review for the baseball is updated to second base
 </pre>
 </div>
 </div>
@@ -319,7 +319,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2 does not exist
+<pre>Successfully deleted basketball with id 1
 </pre>
 </div>
 </div>
