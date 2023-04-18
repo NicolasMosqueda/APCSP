@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      8 min read
     
 </span></p>
 
@@ -136,7 +136,7 @@ window.onload = wrap_img;
   <li>Inspect Variables</li>
 </ul>
 
-<p><img src="/APCSP/images/diagraminput.png" alt="" title="Diagram"></p>
+<p><img src="/APCSP/images/computer%20hardware.jpg" alt="Computer Hardware"></p>
 
 <h3 id="the-internet">
 <a class="anchor" href="#the-internet" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Internet</h3>
@@ -159,17 +159,17 @@ window.onload = wrap_img;
   </li>
   <li>Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use <code class="language-plaintext highlighter-rouge">traceroute</code> and <code class="language-plaintext highlighter-rouge">ping</code> commands from Linux Terminal.
     <ul>
-      <li>Path: <strong>a: is a sequence of directly connected computing devices that begins at the sender and ends at the receiver</strong>
+      <li>Path: <strong>a:sequence of directly connected computing devices that begins at the sender and ends at the receiver</strong>
 </li>
-      <li>Route: <strong>e: is the process of finding a path from sender to receiver</strong>
+      <li>Route: <strong>e:process of finding a path from sender to receiver</strong>
 </li>
-      <li>Computer System: <strong>b: is a group of computing devices and programs working together for a common purpose.</strong>
+      <li>Computer System: <strong>b:group of computing devices and programs that work together.</strong>
 </li>
-      <li>Computer Device: <strong>c: is a physical artifact that can run a program. Some examples include computers, tablets, servers, routers, and smart sensors.</strong>
+      <li>Computer Device: <strong>c: physical device that can run a program.</strong>
 </li>
       <li>Bandwidth: <strong>d: is the maximum amount of data that can be sent in a fixed amount of time</strong>
 </li>
-      <li>Computer Network: <strong>f: is a group of interconnected computing devices capable of sending or receiving data.</strong>
+      <li>Computer Network: <strong>f: group of computing devices that can send or receive data.</strong>
 </li>
     </ul>
   </li>
@@ -184,14 +184,14 @@ window.onload = wrap_img;
 </ul>
 
 <ol>
-  <li><strong>TRUE: Open standards and protocols enable different manufacturers and developers to build hardware and software that can communicate with hardware and software on the rest of the internet.</strong></li>
-  <li><strong>FALSE: IETF is a task force used to enforce laws to keep manufacturers out of the internet.</strong></li>
-  <li><strong>FALSE: Routes are determined in advance and are not flexible.</strong></li>
-  <li><strong>TRUE: A protocol is an agreed-upon set of rules that specify the behavior of a system.</strong></li>
-  <li><strong>FALSE: UDP guarantees transfers and is faster.</strong></li>
-  <li><strong>FALSE: The World Wide Web is the internet.</strong></li>
+  <li><strong>TRUE</strong></li>
+  <li><strong>FALSE</strong></li>
+  <li><strong>FALSE.</strong></li>
+  <li><strong>TRUE</strong></li>
+  <li><strong>FALSE</strong></li>
+  <li><strong>FALSE</strong></li>
   <li>
-<strong>TRUE: HTTP is a protocol used by the World Wide Web.</strong>
+<strong>TRUE</strong>
     <ul>
       <li>Essential Knowledge</li>
     </ul>
@@ -218,7 +218,7 @@ window.onload = wrap_img;
   <li>Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas</li>
 </ul>
 
-<p><img src="/APCSP/images/dobetter.png" alt="" title="Diagram"></p>
+<p><img src="/APCSP/images/frontend%20and%20backend.png" alt="Full Stack"></p>
 
 <ul>
   <li>Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following …</li>
@@ -256,7 +256,7 @@ window.onload = wrap_img;
   <li>Complete the network activity, summarize your understanding of fault tolerance.</li>
 </ul>
 
-<p><strong>The network activity was a very good method of practice to analyzing certain networks with tens of routes and checking whether or not they are fault-tolerant. Essentially, fault tolerance means that in a network of many different sources and destinations, if one route goes down, there is still redundancy and the network has an ability to go from the original source to destination. There is not only one path from A to B, so if that one path goes down, there are more routes that A can go through to eventually reach B.</strong></p>
+<p><strong>Analyzing networks with multiple routes through network activity is an effective way to determine fault tolerance. This means that even if one route fails in a network with various sources and destinations, there are still other paths available to get from the original source to the destination. Essentially, there is redundancy built into the network. By using network activity to analyze these routes, it’s possible to ensure that the network remains operational in the event of a route failure. Having multiple routes means that if one path from point A to point B fails, there are still other routes available to get from A to B.</strong></p>
 
 <h3 id="parallel-and-distributed-computing">
 <a class="anchor" href="#parallel-and-distributed-computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallel and Distributed Computing</h3>
@@ -266,14 +266,14 @@ window.onload = wrap_img;
 
 <ul>
   <li>
-    <p>What is naturally Distributed in Frontend/Backend architecture?: <strong>AWS can be considered naturally distributed. As a server, it is distributing multiple containers across the architecture to allow for high performance for a large number of instances. This allows for a more efficient backend to frontend connection and a smooth full-stack experience.</strong></p>
+    <p>What is naturally Distributed in Frontend/Backend architecture?: <strong>AWS is naturally designed to be distributed, which means that it can distribute multiple containers across its architecture to achieve high performance for numerous instances. This distribution of containers enables a more efficient connection between the backend and frontend, resulting in a seamless full-stack experience. Essentially, as a server, AWS has been designed to effectively distribute resources to ensure that it can handle a large number of instances without any compromise in performance.</strong></p>
   </li>
   <li>
     <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a></p>
   </li>
 </ul>
 
-<p><strong>What mainly catches my eye here as an option for parallel computing within the server is the “workers” parameter. The workers are the number of processes actually loading the application, so if there are multiple workers, there can be multiple processes loading the app in a parallel fashion. According to the article, something that I did not notice as a parallel computing process is the number of threads. This is a parameter that is not a part of the above command, but can be added.</strong></p>
+<p><strong>The “workers” parameter is what stands out to me as a potential way to achieve parallel computing on the server. By increasing the number of workers, the application can be loaded by multiple processes simultaneously. The article highlights that the “threads” parameter, which I wasn’t aware of as a form of parallel computing, can also be added to the command.</strong></p>
 
 <blockquote>
   <p>Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.</p>
@@ -282,7 +282,7 @@ window.onload = wrap_img;
   </ul>
 </blockquote>
 
-<p><strong>After reading the article, it seems as if Ray is an application that is very useful for very large objects and running them efficiently in the form of parallel computing. It is imported as a separate python module, and when testing the running of certain programs, the processing time was significantly less (albeit for the programs tested in the article, it was a very minimal difference of 2-3 seconds), but can be much more significant if being compared for larger data sets in programs.</strong></p>
+<p><strong>Based on the article, it appears that Ray is a valuable tool for efficiently running large objects through parallel computing. It is imported as a separate Python module and can significantly reduce processing time for certain programs. While the article’s tested programs only showed a minor difference of 2-3 seconds, the benefits could be much greater when dealing with larger data sets in programs.</strong></p>
 
 <ul>
   <li>Code example from ChatGPT using squares.  This might be more interesting if nums we generated to be a lot bigger.</li>
