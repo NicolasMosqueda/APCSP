@@ -1,0 +1,50 @@
+/* Define variables for colors and fonts */
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$body-font: Arial, sans-serif;
+
+/* Global styles */
+body {
+  font-family: $body-font;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 3rem;
+}
+
+p {
+  color: $secondary-color;
+  font-size: 1.2rem;
+}
+
+/* Form styles */
+.form-group {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.form-control {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid $secondary-color;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.btn {
+  padding: 0.5rem;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: darken($primary-color, 10%);
+}
