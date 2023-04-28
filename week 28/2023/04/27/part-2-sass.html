@@ -108,7 +108,6 @@ window.onload = wrap_img;
     <meta charset="UTF-8">
     <title>Guess the Number</title>
     <style type="text/css">
-     
       @import url('style.scss');
     </style>
   
@@ -122,17 +121,13 @@ window.onload = wrap_img;
     </div>
     <p id="result"></p>
     <script>
-      
       const randomNumber = Math.floor(Math.random() * 100) + 1;
       let attempts = 0;
-
       function checkGuess() {
         // Get the user's guess
         const guess = parseInt(document.getElementById("guess").value);
-
         // Increase the number of attempts
         attempts++;
-
         // Check if the guess is correct
         if (guess === randomNumber) {
           document.getElementById("result").innerHTML = `Congratulations! You guessed the number in ${attempts} attempts.`;
