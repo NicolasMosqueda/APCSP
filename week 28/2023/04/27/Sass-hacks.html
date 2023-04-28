@@ -100,6 +100,30 @@ window.onload = wrap_img;
 </ul><h1 id="guide-to-sass-hacks">
 <a class="anchor" href="#guide-to-sass-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Guide to SASS Hacks</h1>
 
+<style>
+body.dark {
+  background-color: #212121;
+  color: #fff;
+}
+button.theme-toggle {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+
+<p><button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button></p>
+
+<script>
+function toggleTheme() {
+  const body = document.querySelector('body');
+  body.classList.toggle('dark');
+}
+</script>
+
 
   </div><a class="u-url" href="/APCSP/week%2028/2023/04/27/Sass-hacks.html" hidden></a>
 </article>
