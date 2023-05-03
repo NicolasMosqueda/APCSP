@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -316,6 +316,230 @@ M       31.0     A
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'valid_guesses.csv'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">word_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">word</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">]</span> <span class="ow">and</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">]):</span>
+            <span class="n">word_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">]</span> <span class="ow">and</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">]):</span>
+            <span class="n">word_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">]</span> <span class="ow">and</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">]):</span>
+            <span class="n">word_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span> <span class="o">+</span> <span class="s1">'ism'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\Desktop\Github\APCSP\_notebooks\2023-04-28-binary-hacks.ipynb Cell 5</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; &lt;a href='vscode-notebook-cell:/c%3A/Users/nicom/Desktop/Github/APCSP/_notebooks/2023-04-28-binary-hacks.ipynb#W4sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> with open('valid_guesses.csv', 'r') as f:
+<span class="ansi-green-fg">      &lt;a href='vscode-notebook-cell:/c%3A/Users/nicom/Desktop/Github/APCSP/_notebooks/2023-04-28-binary-hacks.ipynb#W4sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span>     word_list = []
+<span class="ansi-green-fg">      &lt;a href='vscode-notebook-cell:/c%3A/Users/nicom/Desktop/Github/APCSP/_notebooks/2023-04-28-binary-hacks.ipynb#W4sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     for word in f:
+
+<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>: [Errno 2] No such file or directory: 'valid_guesses.csv'</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simulations</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Simulation A'</span><span class="p">,</span> <span class="s1">'time'</span><span class="p">:</span> <span class="mf">10.5</span><span class="p">,</span> <span class="s1">'success'</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Simulation B'</span><span class="p">,</span> <span class="s1">'time'</span><span class="p">:</span> <span class="mf">12.3</span><span class="p">,</span> <span class="s1">'success'</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Simulation C'</span><span class="p">,</span> <span class="s1">'time'</span><span class="p">:</span> <span class="mf">8.1</span><span class="p">,</span> <span class="s1">'success'</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Simulation D'</span><span class="p">,</span> <span class="s1">'time'</span><span class="p">:</span> <span class="mf">9.2</span><span class="p">,</span> <span class="s1">'success'</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Simulation E'</span><span class="p">,</span> <span class="s1">'time'</span><span class="p">:</span> <span class="mf">11.7</span><span class="p">,</span> <span class="s1">'success'</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># Sort by time and success</span>
+
+<span class="n">sorted_simulations</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">simulations</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="p">[</span><span class="s1">'time'</span><span class="p">])</span>
+<span class="n">sorted_simulations</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">simulations</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="p">[</span><span class="s1">'success'</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># Create a list of possible outcomes</span>
+<span class="n">outcomes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="c1"># Define the number of times to simulate the random number generator</span>
+<span class="n">num_simulations</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># Simulate the random number generator</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_simulations</span><span class="p">):</span>
+    <span class="n">outcome</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">outcomes</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Simulation </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">outcome</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Simulation 1: 4
+Simulation 2: 6
+Simulation 3: 2
+Simulation 4: 1
+Simulation 5: 2
+Simulation 6: 4
+Simulation 7: 5
+Simulation 8: 6
+Simulation 9: 5
+Simulation 10: 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">io</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">waldo</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'waldo.jpg'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">waldo</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\Desktop\Github\APCSP\_notebooks\2023-04-28-binary-hacks.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">      &lt;a href='vscode-notebook-cell:/c%3A/Users/nicom/Desktop/Github/APCSP/_notebooks/2023-04-28-binary-hacks.ipynb#X11sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> from skimage import io
+<span class="ansi-green-fg">      &lt;a href='vscode-notebook-cell:/c%3A/Users/nicom/Desktop/Github/APCSP/_notebooks/2023-04-28-binary-hacks.ipynb#X11sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> from matplotlib import pyplot as plt
+<span class="ansi-green-intense-fg ansi-bold">----&gt; &lt;a href='vscode-notebook-cell:/c%3A/Users/nicom/Desktop/Github/APCSP/_notebooks/2023-04-28-binary-hacks.ipynb#X11sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> waldo = io.imread('waldo.jpg')
+<span class="ansi-green-fg">      &lt;a href='vscode-notebook-cell:/c%3A/Users/nicom/Desktop/Github/APCSP/_notebooks/2023-04-28-binary-hacks.ipynb#X11sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> plt.imshow(waldo)
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\anaconda3\lib\site-packages\skimage\io\_io.py:53</span>, in <span class="ansi-cyan-fg">imread</span><span class="ansi-blue-intense-fg ansi-bold">(fname, as_gray, plugin, **plugin_args)</span>
+<span class="ansi-green-fg">     50</span>         plugin = 'tifffile'
+<span class="ansi-green-fg">     52</span> with file_or_url_context(fname) as fname:
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 53</span>     img = call_plugin('imread', fname, plugin=plugin, **plugin_args)
+<span class="ansi-green-fg">     55</span> if not hasattr(img, 'ndim'):
+<span class="ansi-green-fg">     56</span>     return img
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\anaconda3\lib\site-packages\skimage\io\manage_plugins.py:207</span>, in <span class="ansi-cyan-fg">call_plugin</span><span class="ansi-blue-intense-fg ansi-bold">(kind, *args, **kwargs)</span>
+<span class="ansi-green-fg">    203</span>     except IndexError:
+<span class="ansi-green-fg">    204</span>         raise RuntimeError('Could not find the plugin "%s" for %s.' %
+<span class="ansi-green-fg">    205</span>                            (plugin, kind))
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 207</span> return func(*args, **kwargs)
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\anaconda3\lib\site-packages\skimage\io\_plugins\imageio_plugin.py:10</span>, in <span class="ansi-cyan-fg">imread</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
+<span class="ansi-green-fg">      8</span> @wraps(imageio_imread)
+<span class="ansi-green-fg">      9</span> def imread(*args, **kwargs):
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 10</span>     return np.asarray(imageio_imread(*args, **kwargs))
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\anaconda3\lib\site-packages\imageio\core\functions.py:265</span>, in <span class="ansi-cyan-fg">imread</span><span class="ansi-blue-intense-fg ansi-bold">(uri, format, **kwargs)</span>
+<span class="ansi-green-fg">    260</span>     raise TypeError(
+<span class="ansi-green-fg">    261</span>         'Invalid keyword argument "mode", ' 'perhaps you mean "pilmode"?'
+<span class="ansi-green-fg">    262</span>     )
+<span class="ansi-green-fg">    264</span> # Get reader and read first
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 265</span> reader = read(uri, format, "i", **kwargs)
+<span class="ansi-green-fg">    266</span> with reader:
+<span class="ansi-green-fg">    267</span>     return reader.get_data(0)
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\anaconda3\lib\site-packages\imageio\core\functions.py:172</span>, in <span class="ansi-cyan-fg">get_reader</span><span class="ansi-blue-intense-fg ansi-bold">(uri, format, mode, **kwargs)</span>
+<span class="ansi-green-fg">    149</span> """ get_reader(uri, format=None, mode='?', **kwargs)
+<span class="ansi-green-fg">    150</span> 
+<span class="ansi-green-fg">    151</span> Returns a :class:`.Reader` object which can be used to read data
+<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
+<span class="ansi-green-fg">    168</span>     to see what arguments are available for a particular format.
+<span class="ansi-green-fg">    169</span> """
+<span class="ansi-green-fg">    171</span> # Create request object
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 172</span> request = Request(uri, "r" + mode, **kwargs)
+<span class="ansi-green-fg">    174</span> # Get format
+<span class="ansi-green-fg">    175</span> if format is not None:
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\anaconda3\lib\site-packages\imageio\core\request.py:124</span>, in <span class="ansi-cyan-fg">Request.__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, uri, mode, **kwargs)</span>
+<span class="ansi-green-fg">    121</span>     raise ValueError('Request requires mode[1] to be in "iIvV?"')
+<span class="ansi-green-fg">    123</span> # Parse what was given
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 124</span> self._parse_uri(uri)
+<span class="ansi-green-fg">    126</span> # Set extension
+<span class="ansi-green-fg">    127</span> if self._filename is not None:
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\nicom\anaconda3\lib\site-packages\imageio\core\request.py:260</span>, in <span class="ansi-cyan-fg">Request._parse_uri</span><span class="ansi-blue-intense-fg ansi-bold">(self, uri)</span>
+<span class="ansi-green-fg">    257</span> if is_read_request:
+<span class="ansi-green-fg">    258</span>     # Reading: check that the file exists (but is allowed a dir)
+<span class="ansi-green-fg">    259</span>     if not os.path.exists(fn):
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 260</span>         raise FileNotFoundError("No such file: '%s'" % fn)
+<span class="ansi-green-fg">    261</span> else:
+<span class="ansi-green-fg">    262</span>     # Writing: check that the directory to write to does exist
+<span class="ansi-green-fg">    263</span>     dn = os.path.dirname(fn)
+
+<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>: No such file: 'c:\Users\nicom\Desktop\Github\APCSP\_notebooks\waldo.jpg'</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
